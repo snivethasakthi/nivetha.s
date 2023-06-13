@@ -1,0 +1,95 @@
+<html>
+
+<body>
+    <h2>string method</h2>
+    <h3>slice</h3>
+    <p>"maths, enghilsh, tamil"</p>
+    <p id="demo"></p>
+    <h3>length</h3>
+    <p>"nivetha"</p>
+    <p id="nn"></p>
+    <h2>str.substring</h2>
+    <p>green, Blue, yellow</p>
+    <p id="string"></p>
+    <h2>str.substr</h2>
+    <p></p>
+    <p id="maha"></p>
+    <h2>trim</h2>
+    <p>" Hello World "</p>
+    <p id="varsha"></p>
+    <h2>pad.start</h2>
+    <p> "5"</p>
+    <p id="dhara"></p>
+    <script>
+        let sub7 = "maths, enghilsh, tamil";
+        let part = sub7.slice(7, 13);
+        document.getElementById("demo").innerHTML = part;
+        let tt = "nivetha";
+        document.getElementById("nn").innerHTML = tt.length;
+        let color9 = "green, Blue, yellow";
+        document.getElementById("string").innerHTML = color9.substring(7, 13);
+        let str1 = "var, kd, nivv";
+        document.getElementById("maha").innerHTML = str1.substr(3, 13);
+        let word1 = "     Hello World!     ";
+        let word2 = word1.trim();
+
+        document.getElementById("varsha").innerHTML =
+            "Length text1 = " + text1.length + "<br>Length text2 = " + text2.length;
+        let text4 = "5";
+        text4 = text.padStart(4, "0");
+
+        document.getElementById("dhara").innerHTML = text4;
+
+    </script>
+
+</body>
+
+</html>
+
+<html>
+
+<body>
+    <h2>array method</h2>
+    <h3>length</h3>
+    <p>["html", "css", "js", "java"]</p>
+    <p id="d"></p>
+    <h3>join</h3>
+    <p>["html", "css", "js", "java"]</p>
+    <p id="n"></p>
+    <h3>pop</h3>
+    <p>["html", "css", "js", "java"]</p>
+    <p id="i"></p>
+    <p id="v"></p>
+    <h3>shift</h3>
+    <p>["html", "css", "js", "java"]</p>
+    <p id="e"></p>
+    <p id="t"></p>
+    <h3>push</h3>
+    <p>["html", "css", "js", "java"]</p>
+    <p id="h"></p>
+    <p id="a"></p>
+
+    <script>
+        const language7 = ["html", "css", "js", "java"];
+        let size = language7.length;
+        document.getElementById("d").innerHTML = size;
+        const language8 =["html", "css", "js", "java"];
+        document.getElementById("n").innerHTML = language8.join(" * ");
+        const language9 =["html", "css", "js", "java"];
+        document.getElementById("i").innerHTML = language9.pop();
+        document.getElementById("v").innerHTML = language9;
+        const language2 = ["html", "css", "js", "java"];
+        document.getElementById("e").innerHTML = language2;
+        language2.shift();
+        document.getElementById("t").innerHTML = language2;
+        const language1 = ["html", "css", "js", "java"];
+        document.getElementById("h").innerHTML = language1;
+        language1.push("ca");
+        document.getElementById("a").innerHTML = language1;
+    </script>
+
+
+    </script>
+</body>
+
+</html>

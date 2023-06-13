@@ -1,0 +1,99 @@
+<html>
+
+<body>
+    <h2>array method</h2>
+    <h3>hight</h3>
+    <p>[1, 2, 3, 4, 5]</p>
+    <p id="l"></p>
+    <h3>join</h3>
+    <p> ["social", "maths", "english", "tamil"]</p>
+    <p id="g"></p>
+    <h3>pop</h3>
+    <p>["rdbms", "js", "html", "css"]</p>
+    <p id="css"></p>
+    <p id="cs"></p>
+    <h3>shift</h3>
+    <p>["for", "dowhile", "while"]</p>
+    <p id="ht"></p>
+    <p id="tt"></p>
+    <h3>push</h3>
+    <p>["for", "dowhile", "while", "forin"]</p>
+    <p id="hh"></p>
+    <p id="aa"></p>
+    <h3>unshift</h3>
+    <p> ["dhara", "maha", "nivetha", "varsha"]</p>
+    <p id="ma"></p>
+    <p id="rr"></p>
+    <h3>splice</h3>
+    <p> ["blue", "Orange", "green", "red"]</p>
+    <p id="demo1"></p>
+    <p id="demo2"></p>
+    <h3>length2</h3>
+    <p id="dd"></p>
+    <h3>foreach</h3>
+    <p> [45, 4, 9, 16, 25]</p>
+    <p id="demo6"></p>
+    <h3>index</h3>
+    <script>
+        const points = [1, 2, 3, 4, 5];
+        points.sort(function(a,b){return b-a});
+        document.getElementById("l").innerHTML = "the highest number is " +points[0];
+
+        const subject9 = ["social", "maths", "english", "tamil"]
+        document.getElementById("g").innerHTML = subject9.join(" / ");
+
+        const subject3 = ["rdbms", "js", "html", "css"];
+        document.getElementById("css").innerHTML = subject3.pop();
+        document.getElementById("cs").innerHTML = subject3;
+
+        const loop5 = ["for", "dowhile", "while"];
+        document.getElementById("ht").innerHTML = loop5;
+        loop5.shift();
+        document.getElementById("tt").innerHTML = loop5;
+
+        const loop6 = ["for", "dowhile", "while", "forin"];
+        document.getElementById("hh").innerHTML = loop6;
+        loop6.push("forof");
+        document.getElementById("aa").innerHTML = loop6;
+
+        const name7 = ["dhara", "maha", "nivetha", "varsha"];
+        document.getElementById("ma").innerHTML =name7;
+        name7.unshift();
+        document.getElementById("rr").innerHTML = name7;
+
+        const color = ["blue", "Orange", "green", "red"];
+        document.getElementById("demo1").innerHTML = color;
+
+        color.splice(3, 0, "block", "yellow");
+        document.getElementById("demo2").innerHTML = color;
+
+        const f2 = ["blue", "Orange", "green", "red"];
+        let size5 = f2.length;
+        document.getElementById("dd").innerHTML = size5;
+
+
+        const num = [45, 4, 9, 16, 25];
+
+        let answer = "";
+        num.forEach(myFunction);
+        document.getElementById("demo6").innerHTML = answer;
+
+        function myFunction(value, index, array) {
+            answer += value+2 + "<br>";
+        }
+
+        var language = ["web", "html", "css"];
+        var result = language.indexOf("html");
+        document.writeln(result);
+    </script>
+
+</body>
+
+
+</script>
+
+
+
+</body>
+
+</html>
